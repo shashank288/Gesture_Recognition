@@ -1,14 +1,15 @@
 # Gesture_Recognition
 ### Problem statement: 
-To create a deep learning model that can explain the content of an image in the form of speech through caption generation with the attention mechanism on the Flickr8K data set 
-This type of model is a use case for blind people so that they can understand any image with the help of speech. The caption generated through a CNN-RNN model will be converted to speech using a text-to-speech library.This problem statement is an application of both deep learning and natural language processing. The features of an image will be extracted by the CNN-based encoder, and this will be decoded by an RNN model.
+A home electronics company which manufactures state of the art smart televisions wants you to develop a cool feature in the smart-TV that can recognise five different gestures performed by the user which will help users control the TV without using a remote. The gestures are continuously monitored by the webcam mounted on the TV. Each gesture corresponds to a specific command:
 
-### Project pipeline:
+* Thumbs up:  Increase the volume
+* Thumbs down: Decrease the volume
+* Left swipe: 'Jump' backwards 10 seconds
+* Right swipe: 'Jump' forward 10 seconds  
+* Stop: Pause the movie
 
-The project pipeline can be briefly summarised in the following four steps:
 
-* Data understanding: Load the data and understand the representation.
-* Data preprocessing: In this step, we processed both images and captions in the desired format.
-* Train/Test split: Images and captions are combined together to create the train and test data sets.
-* Model building: The image captioning model is built by building the Encoder, Attention and Decoder model
-* Model evaluation: The model was evaluated using the BLEU score.
+
+### Understanding the Dataset:
+The training data consists of a few hundred videos categorised into one of the five classes. Each video (typically 2-3 seconds long) is divided into a sequence of 30 frames(images). These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use.
+
